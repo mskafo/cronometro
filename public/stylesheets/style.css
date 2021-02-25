@@ -1,0 +1,151 @@
+body {
+  padding-top: 5rem;
+  background: #191923;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.navbar{
+  background-color: #E0E0E0;
+}
+
+.btn-outline-secondary{
+  background: #E0E0E0;
+}
+
+.btn-outline-secondary:hover{
+  display: inline-block !important;
+  background: #E0E0E0;
+  filter: brightness(95%);
+}
+
+.timer-div{
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  height: 300px;
+  width: 500px;
+  border: 3px solid #E0E0E0;
+  border-radius: 35px;
+}
+
+.timer-text{
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  height: 150px;
+  width: 375px;
+}
+
+.inputs{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.inputs span{
+  font-size: 60px;
+  color: #495057;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input[type="number"], input[type="number"]:focus
+{
+    transition: border .3s;
+    color: #495057;
+    display: inline-block;
+    width: 70px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 60px;
+}
+
+input[type="number"]:focus
+{
+  border-bottom: 1px solid #fff;
+}
+
+.btns{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 80%; right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.btns button{
+  transition: all .3s;
+  color: #999;
+  border-color: #999;
+}
+
+.btns button:hover{
+  color: #999;
+  border-color: #999;
+  background-color: #323242;
+}
+
+.btns button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #495057;
+  opacity: 0.25;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .timer-div{
+    height: 360px;
+    width: 600px;
+  }
+
+  .timer-text{
+    height: 180px;
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .timer-div{
+    height: 180px;
+    width: 300px;
+  }
+
+  .timer-text{
+    top: 45%;
+    height: 90px;
+    width: 100%;
+  }
+
+  input[type="number"], input[type="number"]:focus
+  {
+      font-size: 50px;
+      height: 50px;
+      width: 60px;
+  }
+
+
+  .inputs span{
+    font-size: 50px;
+  }
+
+  .btns button{
+    font-size: 13px;
+    padding: 6px;
+  }
+}
